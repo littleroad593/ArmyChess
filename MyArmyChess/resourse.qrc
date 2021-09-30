@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>png/dilei_hong.png</file>
+        <file>png/dilei_lan.png</file>
+        <file>png/gongbing_hong.png</file>
+        <file>png/gongbing_lan.png</file>
+        <file>png/junqi_hong.png</file>
+        <file>png/junqi_lan.png</file>
+        <file>png/junzhang_hong.png</file>
+        <file>png/junzhang_lan.png</file>
+        <file>png/kongqipan.png</file>
+        <file>png/lianzhang_hong.png</file>
+        <file>png/lianzhang_lan.png</file>
+        <file>png/lvzhang_hong.png</file>
+        <file>png/lvzhang_lan.png</file>
+        <file>png/paizhang_hong.png</file>
+        <file>png/paizhang_lan.png</file>
+        <file>png/shizhang_hong.png</file>
+        <file>png/shizhang_lan.png</file>
+        <file>png/siling_hong.png</file>
+        <file>png/siling_lan.png</file>
+        <file>png/tuanzhang_hong.png</file>
+        <file>png/tuanzhang_lan.png</file>
+        <file>png/weizhi.png</file>
+        <file>png/yingzhang_hong.png</file>
+        <file>png/yingzhang_lan.png</file>
+        <file>png/zhadan_hong.png</file>
+        <file>png/zhadan_lan.png</file>
+    </qresource>
+</RCC>

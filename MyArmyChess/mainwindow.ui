@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>2500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="Chessboard" name="centralwidget">
+   <widget class="QLabel" name="chessboard">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>591</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/kongqipan.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_JunQi">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>330</y>
+      <width>451</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>80</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:80pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'.AppleSystemUIFont'; color:#ff2600;&quot;&gt;军   棋&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>13</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>68</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>123</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>178</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>233</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>288</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>506</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>616</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>671</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>561</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>726</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>451</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>68</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>178</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>451</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>561</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>288</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>13</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>726</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>138</x>
+      <y>671</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>68</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>616</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>451</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>506</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>233</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>123</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>288</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>13</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>726</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>257</x>
+      <y>671</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>68</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>178</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>451</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>561</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_39">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>288</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_40">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>13</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_41">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>726</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_42">
+    <property name="geometry">
+     <rect>
+      <x>376</x>
+      <y>671</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>68</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>616</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>178</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>451</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_43">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>506</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_44">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>233</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_45">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>123</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_46">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>561</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_47">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>288</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_48">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>13</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_49">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>726</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+   <widget class="Chesspiece" name="label_50">
+    <property name="geometry">
+     <rect>
+      <x>495</x>
+      <y>671</y>
+      <width>75</width>
+      <height>38</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resourse.qrc">:/new/prefix1/png/weizhi.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1500</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="ConnectMenu">
+    <property name="title">
+     <string>连接</string>
+    </property>
+    <addaction name="actionCreate"/>
+    <addaction name="actionConnect"/>
+    <addaction name="actionDisconnect"/>
+   </widget>
+   <widget class="QMenu" name="OptionMenu">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <addaction name="actionStart"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="ConnectMenu"/>
+   <addaction name="OptionMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreate">
+   <property name="text">
+    <string>创建服务器</string>
+   </property>
+   <property name="toolTip">
+    <string>创建一个新的服务器</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="text">
+    <string>连接服务器</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="text">
+    <string>开始</string>
+   </property>
+   <property name="toolTip">
+    <string>准备开始游戏</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+   <property name="toolTip">
+    <string>退出游戏</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="text">
+    <string>断开连接</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Chesspiece</class>
+   <extends>QLabel</extends>
+   <header>Chesspiece.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Chessboard</class>
+   <extends>QWidget</extends>
+   <header location="global">Chessboard.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionQuit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>399</x>
+     <y>299</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStart</sender>
+   <signal>triggered()</signal>
+   <receiver>label_JunQi</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>725</x>
+     <y>462</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
